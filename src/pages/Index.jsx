@@ -33,6 +33,24 @@ const Index = () => {
 
         {/* Main Content */}
         <Flex direction="column" flex="1" justify="center" align="center" p={4} bgColor={bgColor}>
+          {}
+          <Box as="section" id="projects" py={10} bgColor={bgColor}>
+            <Container maxW="container.md">
+              <Heading as="h2" size="xl" mb={6} color={textColor}>
+                Portfolio Projects
+              </Heading>
+              <Stack spacing={8}>
+                <Box p={5} shadow="md" borderWidth="1px" borderRadius="lg">
+                  <Heading fontSize="xl">Project 1</Heading>
+                  <Text mt={4}>Description of project 1...</Text>
+                </Box>
+                <Box p={5} shadow="md" borderWidth="1px" borderRadius="lg">
+                  <Heading fontSize="xl">Project 2</Heading>
+                  <Text mt={4}>Description of project 2...</Text>
+                </Box>
+              </Stack>
+            </Container>
+          </Box>
           <Box textAlign="center" maxW="container.md">
             <Heading mb={4} color={textColor}>
               Hello, I'm <span style={{ color: accentColor }}>Your Name</span>
@@ -50,6 +68,18 @@ const Index = () => {
 
         {/* Footer */}
         <Box as="footer" width="full" py={4} bgColor={bgColor}>
+          {}
+          <Box as="section" id="about" py={10} bgColor={bgColor}>
+            <Container maxW="container.md">
+              <Flex direction="column" align="center" textAlign="center">
+                <Heading as="h2" size="xl" mb={6} color={textColor}>
+                  About Me
+                </Heading>
+                <Image borderRadius="full" boxSize="150px" src="/path/to/your-image.jpg" alt="Your Name" mb={4} />
+                <Text fontSize="xl">Brief description about yourself...</Text>
+              </Flex>
+            </Container>
+          </Box>
           <Container maxW="container.md">
             <Text textAlign="center" color={textColor}>
               © {new Date().getFullYear()} Your Name. All rights reserved.
